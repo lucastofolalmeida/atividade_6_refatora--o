@@ -31,15 +31,9 @@ function f3(lista, n) {
 }
 
 function f4(v) {
-  if (v != null) {
-    if (v >= 0) {
-      if (v <= 100) {
-        if (typeof v === "number") {
-          return true;
-        }
-      }
-    }
-  }
+  if (v != null) return true 
+    if (v >= 0 || v <= 100) return true
+        if (typeof v === "number") return true
   return false;
 }
 
