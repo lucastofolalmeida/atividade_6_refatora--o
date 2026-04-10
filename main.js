@@ -20,20 +20,20 @@ function tempoMusica(s) {
   return minuto + ":" + segundo;
 }
 
-function f3(lista, n) {
+function procurarMusica(lista, nome) {
   var resultado = null;
   for (var i = 0; i < lista.length; i++) {
-    if (lista[i].nome == n) {
+    if (lista[i].nome == nome) {
       resultado = lista[i];
     }
   }
   return resultado;
 }
 
-function f4(v) {
-  if (v != null) return true 
-    if (v >= 0 || v <= 100) return true
-        if (typeof v === "number") return true
+function volumeValido(volume) {
+  if (volume != null) return true 
+    if (volume >= 0 || volume <= 100) return true
+        if (typeof volume === "number") return true
   return false;
 }
 
